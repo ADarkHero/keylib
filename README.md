@@ -1,2 +1,2 @@
 # keylib
-Custom library manager for Steam 
+Custom library manager for Steam.
