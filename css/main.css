@@ -1,0 +1,27 @@
+﻿/***********************************
+	DIV-Container
+***********************************/
+
+#main {
+	margin-left: 2.5%;
+	margin-top: 0.5%;
+}
+
+
+/***********************************
+	Classes
+***********************************/
+
+
+/***********************************
+	Tags
+***********************************/
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+input, select, option, button {
+	width: 97.5% !important;		/* Because of margin-left from #main */
+}
