@@ -7,10 +7,11 @@
 	echo '<div class="row">';
 	for($i = 1; $row = $statement->fetch(); $i++) {
 		if($i/3 == 0){ echo '<div class="row">'; }
-			echo '<div class="col-sm-4" style="height: 500px;">';
+			echo '<div class="col-sm-4 card">';
 				echo '<a href="index.php?s=info&id='.$row['SteamID'].'">';
-					echo '<img class="card-img-top" src="'.$row['SteamPicture'].'" alt="Card image cap">';
-					echo '<div class="card-block">';
+					echo '<img class="card-img-center" src="'.$row['SteamPicture'].'" alt="'.$row['SteamName'].' Screenshot">';
+					echo '<div class="card-img-overlay">';
+						echo '<img src="img/bg.png"></img>';
 						echo '<h4 class="card-title">'.$row['SteamName'].'</h4>';
 						echo '<p class="card-text">'.$row['SteamText'].'</p>';
 					echo '</div>';
@@ -18,5 +19,8 @@
 			echo '</div>';
 		if($i/3 == 0){ echo "</div>"; }
 	}
+	
+	
+	if($i/3 != 0){ echo "</div>"; }
 
 ?>
