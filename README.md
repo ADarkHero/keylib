@@ -7,4 +7,6 @@ Currently the rows in the database need to be ordered like this but the row name
 * Name
 * Description
 * Image
-* Other Info
+* Additional Infotable 1
+* Additional Infotable 2
+* ...
