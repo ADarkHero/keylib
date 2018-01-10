@@ -17,9 +17,9 @@
 				file_put_contents($imagepath, fopen($steam["picture"], 'r'));	//Save Screenshot locally
 				
 				//Write game to database
-				$statement = $pdo->prepare("INSERT INTO steam (SteamID, SteamName, SteamPicture, SteamText, SteamCustom) 
-				VALUES (?, ?, ?, ?, ?)");
-				$result = $statement->execute([$foundappid, $foundapp, $imagepath, $steam["description"] , ""]);
+				$statement = $pdo->prepare("INSERT INTO steam (".$tables[0].", ".$tables[1].", ".$tables[2].", ".$tables[3].") 
+				VALUES (?, ?, ?, ?)");
+				$result = $statement->execute([$foundappid, $foundapp, $steam["description"], $imagepath]);
 				
 				break;	//First game found is taken
 			}
