@@ -7,7 +7,11 @@ html, body {
 }
 
 input, select, option, button {
+<<<<<<< HEAD
 	width: 100% !important;
+=======
+	width: 97.5% !important;		/* Because of margin-left from #main */
+>>>>>>> eb80de38d51c7c5aa0a4a1918b68824700bb4ecc
 }
 
 /***********************************
@@ -26,16 +30,23 @@ input, select, option, button {
 	Classes
 ***********************************/
 
+<<<<<<< HEAD
 .card{
 	height: 500px;
 	overflow: hidden;
 	background-position: center;
+=======
+.col-sm-4{
+	height: 500px;
+	overflow: hidden;
+>>>>>>> eb80de38d51c7c5aa0a4a1918b68824700bb4ecc
 }
 
 img.card-img-center{
 	height: 500px;
 }
 
+<<<<<<< HEAD
 .card-img-top{
 	max-width: 100%;
 	max-height: 400px;
@@ -61,4 +72,21 @@ img.card-img-center{
 .input-lg{
 	margin-bottom: 10px;
 }
+=======
+.card-title{
+	margin-top: -140px;
+	margin-left: 10px;
+	font-size: 18px;
+}
+
+.card-text{
+	margin-left: 10px;
+	font-size: 12px;
+}
+
+.card-img-overlay{
+	margin-top: -150px;
+}
+
+>>>>>>> eb80de38d51c7c5aa0a4a1918b68824700bb4ecc
 
