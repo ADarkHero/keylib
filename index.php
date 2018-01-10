@@ -11,7 +11,6 @@
 		else{
 			include 'php/home.php';
 		}	
-			
 
 	?>
 	

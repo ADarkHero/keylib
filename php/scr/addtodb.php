@@ -2,11 +2,11 @@
 	$name = $_POST["name"];
 	$type = $_POST["type"];
 	
-	require_once($path."php/scr/database.php");		//Connect to database
+	require_once("php/scr/database.php");		//Connect to database
 	
 	//Search Steam JSON File for specific name
 	if($type == "Steam"){
-		include $path.'php/scr/addtodb/steam.php';
+		include 'php/scr/addtodb/steam.php';
 	}
 
 	
