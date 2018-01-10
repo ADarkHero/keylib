@@ -1,6 +1,6 @@
 ﻿<?php
-	$name = $_POST["name"];
-	$type = $_POST["type"];
+	$name = trim($_POST["name"]);
+	$type = trim($_POST["type"]);
 	
 	require_once("php/scr/database.php");		//Connect to database
 	
@@ -18,7 +18,7 @@
 	******************************/
 	if($type == "Steam"){
 		if(isset($result) && $result){
-			echo '<button type="button" class="btn btn-success">'.$foundapp.' ('.$foundappid.') was successfully written to the database!</button>';
+			echo '<a href="index.php?s=info&id='.$foundappid.'"><button type="button" class="btn btn-success">'.$foundapp.' ('.$foundappid.') was successfully written to the database!</button></a>';
 		}
 		else{
 			echo '<button type="button" class="btn btn-danger">Game already in database or not found on Steam!</button>';
