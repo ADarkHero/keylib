@@ -15,6 +15,6 @@ For more Screenshots, take a look at [the wiki](https://github.com/ADarkHero/key
 * Name
 * Description
 * Image
-* Additional Infotable 1
-* Additional Infotable 2
+* Additional info-row 1
+* Additional info-row 2
 * ...
