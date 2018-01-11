@@ -27,38 +27,38 @@ input, select, option, button {
 ***********************************/
 
 .card{
-	height: 500px;
+	max-height: 215px;
 	overflow: hidden;
 	background-position: center;
 }
 
 img.card-img-center{
-	height: 500px;
+	height: 215px;
 }
 
 .card-img-top{
 	max-width: 100%;
-	max-height: 400px;
+	max-height: 215px;
 	margin-bottom: 20px;
 }
 
 .card-title{
-	margin-top: -140px;
-	margin-left: 5px;
-	font-size: 18px;
-}
-
-.card-text{
-	margin-left: 5px;
-	font-size: 12px;
+	margin-top: -146px;
+	font-size: 20px;
+        margin-left: -10px;
 }
 
 .card-img-overlay{
-	margin-top: 350px;
+	margin-top: 165px;
 	margin-left: -15px;
 }
 
 .input-lg{
 	margin-bottom: 10px;
+}
+
+.row{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 }
 

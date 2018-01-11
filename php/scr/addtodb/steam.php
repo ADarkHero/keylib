@@ -26,4 +26,26 @@
 		}
 	}
 	
+        
+        
+        //Read stuff from Steam DB
+	function getFromSteamByID($id){
+		//This link is used to read out data from steam. To make it work, we need the appid of the specific game(s)
+		$apibase = "http://store.steampowered.com/api/appdetails?appids=";
+		$api = $apibase.$id;
+		
+		$steam = file_get_contents($api);	//Link to API with all game names+IDs
+		$json = json_decode($steam, true);
+		
+		if($json[$id]["success"] == "true" && $json[$id]["data"]["type"] == "game"){	//Is it a game?
+		
+			$game["description"] = $json[$id]["data"]["short_description"];
+			
+			$game["picture"] = $json[$id]["data"]["header_image"];
+			
+			return $game;
+		
+		}
+		return "false";
+	}
 ?>
