@@ -26,7 +26,6 @@
 				echo '<a href="index.php?s=info&id='.$row[0].'">';
 						echo '<img src="img/bg.png" class="card-img-overlay"></img>';
 						echo '<h4 class="card-title">'.$row[1].'</h4>';
-						echo '<p class="card-text">'.$row[2].'</p>';
 				echo '</a>';
 			echo '</div>';
 		if($i/3 == 0){ echo "</div>"; }
