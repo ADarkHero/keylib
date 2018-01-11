@@ -7,15 +7,9 @@ html, body {
 }
 
 input, select, option, button {
-<<<<<<< HEAD
 	width: 100% !important;
-=======
-<<<<<<< HEAD
 	width: 100% !important;
-=======
 	width: 97.5% !important;		/* Because of margin-left from #main */
->>>>>>> eb80de38d51c7c5aa0a4a1918b68824700bb4ecc
->>>>>>> 2cc3d404ab306c00ec9f1bf46413d571cf07619b
 }
 
 /***********************************
@@ -34,32 +28,21 @@ input, select, option, button {
 	Classes
 ***********************************/
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 2cc3d404ab306c00ec9f1bf46413d571cf07619b
 .card{
 	height: 500px;
 	overflow: hidden;
 	background-position: center;
-<<<<<<< HEAD
-=======
-=======
+}
+
 .col-sm-4{
 	height: 500px;
 	overflow: hidden;
->>>>>>> eb80de38d51c7c5aa0a4a1918b68824700bb4ecc
->>>>>>> 2cc3d404ab306c00ec9f1bf46413d571cf07619b
 }
 
 img.card-img-center{
 	height: 500px;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 2cc3d404ab306c00ec9f1bf46413d571cf07619b
 .card-img-top{
 	max-width: 100%;
 	max-height: 400px;
@@ -85,9 +68,7 @@ img.card-img-center{
 .input-lg{
 	margin-bottom: 10px;
 }
-<<<<<<< HEAD
-=======
-=======
+
 .card-title{
 	margin-top: -140px;
 	margin-left: 10px;
@@ -102,7 +83,3 @@ img.card-img-center{
 .card-img-overlay{
 	margin-top: -150px;
 }
-
->>>>>>> eb80de38d51c7c5aa0a4a1918b68824700bb4ecc
->>>>>>> 2cc3d404ab306c00ec9f1bf46413d571cf07619b
-
