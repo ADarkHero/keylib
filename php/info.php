@@ -3,7 +3,7 @@
         
         if(isset($_POST[$tables[0]])){
             if(isset($_POST["delete"])){
-                require_once($path."php/scr/deleteInfo.php");
+                require_once("php/scr/deleteInfo.php");
                 deleteEntry($pdo, $table_name, $tables, $_GET["id"]);
                 header("Location: index.php");
             }

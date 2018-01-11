@@ -8,8 +8,6 @@ html, body {
 
 input, select, option, button {
 	width: 100% !important;
-	width: 100% !important;
-	width: 97.5% !important;		/* Because of margin-left from #main */
 }
 
 /***********************************
@@ -32,11 +30,6 @@ input, select, option, button {
 	height: 500px;
 	overflow: hidden;
 	background-position: center;
-}
-
-.col-sm-4{
-	height: 500px;
-	overflow: hidden;
 }
 
 img.card-img-center{
@@ -69,17 +62,3 @@ img.card-img-center{
 	margin-bottom: 10px;
 }
 
-.card-title{
-	margin-top: -140px;
-	margin-left: 10px;
-	font-size: 18px;
-}
-
-.card-text{
-	margin-left: 10px;
-	font-size: 12px;
-}
-
-.card-img-overlay{
-	margin-top: -150px;
-}
