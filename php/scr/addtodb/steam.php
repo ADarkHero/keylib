@@ -15,9 +15,9 @@
 			if($steam != "false"){
 				$imagepath = "games/img/".$foundappid.".jpg";
                                 if(file_exists($imagepath)){
-                                    $imagepath = ( is_writable($imagepath) ) ? TRUE : chmod($imagepath, 0755);  //Overwrite file, if it already exists
+                                    $iswritable = ( is_writable($imagepath) ) ? TRUE : chmod($imagepath, 0755);  //Overwrite file, if it already exists
                                 }
-				file_put_contents($imagepath, fopen($steam["picture"], 'r'));	//Save Screenshot locally
+				file_put_contents($imagepath, fopen($steam["picture"], 'r'));	//Save Picture locally
 				
 				//Write game to database
 				$statement = $pdo->prepare("INSERT INTO steam (".$tables[0].", ".$tables[1].", ".$tables[2].", ".$tables[3].") 

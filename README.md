@@ -1,5 +1,5 @@
 # keylib
-![Keylib Screenshot](https://i.imgur.com/6zDJtO5.png)
+![Keylib Screenshot](https://i.imgur.com/ZnMTV1Y.png)
 Custom library manager for Steam games and other things in the future.
 
 For more Screenshots, take a look at [the wiki](https://github.com/ADarkHero/keylib/wiki/Screenshots).

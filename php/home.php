@@ -14,7 +14,7 @@
                 $statement = searchEverything($pdo, $table_name, $tables);
         }
         else{
-            $statement = $pdo->prepare("SELECT * FROM ".$table_name." ORDER BY ".$tables[1]);
+            $statement = $pdo->prepare("SELECT * FROM ".$table_name." ORDER BY ".$tables[2]);
         }
         
 
