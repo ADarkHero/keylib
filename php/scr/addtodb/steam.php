@@ -14,12 +14,15 @@
 			
 			if($steam != "false"){
 				$imagepath = "games/img/".$foundappid.".jpg";
+                                if(file_exists($imagepath)){
+                                    $imagepath = ( is_writable($imagepath) ) ? TRUE : chmod($imagepath, 0755);  //Overwrite file, if it already exists
+                                }
 				file_put_contents($imagepath, fopen($steam["picture"], 'r'));	//Save Screenshot locally
 				
 				//Write game to database
 				$statement = $pdo->prepare("INSERT INTO steam (".$tables[0].", ".$tables[1].", ".$tables[2].", ".$tables[3].") 
 				VALUES (?, ?, ?, ?)");
-				$result = $statement->execute([$foundappid, $foundapp, $steam["description"], $imagepath]);
+				$result = $statement->execute([$foundappid, $imagepath, $foundapp, $steam["description"]]);
 				
 				break;	//First game found is taken
 			}

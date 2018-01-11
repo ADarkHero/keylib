@@ -12,9 +12,9 @@ For more Screenshots, take a look at [the wiki](https://github.com/ADarkHero/key
 
 ## Currently the rows in the database need to be ordered like this but the row names are irrelevant:
 * ID
+* Image
 * Name
 * Description
-* Image
 * Additional info-row 1
 * Additional info-row 2
 * ...

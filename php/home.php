@@ -22,11 +22,8 @@
 	echo '<div class="row">';
 	for($i = 1; $row = $statement->fetch(); $i++) {
 		if($i/3 == 0){ echo '<div class="row">'; }
-			echo '<div class="col-sm-4 card" style="background-image: url(\''.$row[3].'\')">';
-				echo '<a href="index.php?s=info&id='.$row[0].'">';
-						echo '<img src="img/bg.png" class="card-img-overlay"></img>';
-						echo '<h4 class="card-title">'.$row[1].'</h4>';
-				echo '</a>';
+			echo '<div class="col-sm-4 card" style="background-image: url(\''.$row[1].'\')">';
+				echo '<a href="index.php?s=info&id='.$row[0].'" class="card-link"></a>';
 			echo '</div>';
 		if($i/3 == 0){ echo "</div>"; }
 	}
