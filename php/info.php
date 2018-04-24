@@ -23,8 +23,9 @@
         
         if($_GET["id"] <= 999999){   //Steam-IDs -> 6 numbers
             echo '<div class="row">';
-                echo '<div class="col-sm-6"><a href="http://store.steampowered.com/app/'.$_GET["id"].'" target="blank"><button class="btn btn-info btn-lg btn-block">View Store Page</button></a></div>';
-                echo '<div class="col-sm-6"><a href="steam://run'.$_GET["id"].'" target="blank"><button class="btn btn-info btn-lg btn-block">Run Steam Game</button></a></div>';
+                echo '<div class="col-sm-4"><a href="http://store.steampowered.com/app/'.$_GET["id"].'" target="blank"><button class="btn btn-info btn-lg btn-block">View Store Page</button></a></div>';
+                echo '<div class="col-sm-4"><a href="steam://run'.$_GET["id"].'" target="blank"><button class="btn btn-info btn-lg btn-block">Run Steam Game</button></a></div>';
+                echo '<div class="col-sm-4"><a href="https://store.steampowered.com/account/registerkey?key='.$row[4].'" target="blank"><button class="btn btn-info btn-lg btn-block">Activate Steam Key</button></a></div>';
             echo '</div><br />';
         }
         
