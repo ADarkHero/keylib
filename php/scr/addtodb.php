@@ -4,10 +4,8 @@
 	
 	require_once("php/scr/database.php");		//Connect to database
 	
-	//Search Steam JSON File for specific name
-	if($type == "Steam"){
-		include 'php/scr/addtodb/steam.php';
-	}
+	//What's the entry type?
+        include 'php/scr/addtodb/'.strtolower($type).'.php';
 
 	
 	
@@ -16,16 +14,12 @@
 	/******************************
 		User Notifications
 	******************************/
-	if($type == "Steam"){
-		if(isset($result) && $result){
-			echo '<a href="index.php?s=info&id='.$foundappid.'"><button type="button" class="btn btn-success">'.$foundapp.' ('.$foundappid.') was successfully written to the database!</button></a>';
-		}
-		else{
-			echo '<button type="button" class="btn btn-danger">Game already in database or not found on Steam!</button>';
-		}
-	}
+        if(isset($result) && $result){
+            echo '<a href="index.php?s=info&id='.$entryid.'"><button type="button" class="btn btn-success">';
+            echo $entryname.' ('.$entryid.') was successfully written to the database!</button></a>';
+        }
 	else{
-		echo '<button type="button" class="btn btn-warning">I am error!</button>';
+            echo '<button type="button" class="btn btn-danger">Already in database or not found!</button>';
 	}
 	
 ?>

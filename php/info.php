@@ -19,7 +19,7 @@
 	$row = $statement->fetch();
         
         
-        echo '<center><img class="card-img-top" src="'.$row[1].'" alt="'.$row[2].' Screenshot"></center>';
+        echo '<center><img class="card-img-top" src="'.$row[1].'" alt="'.$row[2].' picture"></center>';
         
         echo '<form action="index.php?s=info&id='.$_GET["id"].'" method="post">';
         for($i = 0; $i < sizeof($tables); $i++){
