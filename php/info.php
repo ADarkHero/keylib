@@ -21,13 +21,22 @@
         
         echo '<center><img class="card-img-top" src="'.$row[1].'" alt="'.$row[2].' picture"></center>';
         
+        if($_GET["id"] <= 999999){   //Steam-IDs -> 6 numbers
+            echo '<div class="row">';
+                echo '<div class="col-sm-6"><a href="http://store.steampowered.com/app/'.$_GET["id"].'" target="blank"><button class="btn btn-info btn-lg btn-block">View Store Page</button></a></div>';
+                echo '<div class="col-sm-6"><a href="steam://run'.$_GET["id"].'" target="blank"><button class="btn btn-info btn-lg btn-block">Run Steam Game</button></a></div>';
+            echo '</div><br />';
+        }
+        
         echo '<form action="index.php?s=info&id='.$_GET["id"].'" method="post">';
         for($i = 0; $i < sizeof($tables); $i++){
             echo '<div class="row">';
                 echo '<div class="col-sm-3"><button class="btn btn-default btn-lg btn-block">'.$tables[$i].'</button></div>';
-                echo '<div class="col-sm-9"><input type="text" class="form-control input-lg" name="'.$tables[$i].'" value="'.$row[$i].'" ></div>';
+                echo '<div class="col-sm-9"><input type="text" class="form-control input-lg" name="'.$tables[$i].'" value="'.$row[$i].'" ></div>'; 
             echo '</div>';
         }
+        
+        
         
         echo '<div class="row">';
             echo '<div class="col-sm-3"><button class="btn btn-default btn-lg btn-block">DELETE Entry</button></div>';

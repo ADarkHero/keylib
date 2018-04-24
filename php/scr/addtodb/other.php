@@ -12,5 +12,4 @@
     $statement = $pdo->prepare("INSERT INTO ".$table_name." (".$tables[0].", ".$tables[1].", ".$tables[2].", ".$tables[3].") 
     VALUES (?, ?, ?, ?)");
     $result = $statement->execute([$entryid, "", $entryname, ""]);
-
 ?>

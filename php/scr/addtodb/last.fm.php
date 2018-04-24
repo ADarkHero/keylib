@@ -8,7 +8,7 @@
 	
         //Read variables from json
         do{
-            $entryid = rand(1000000, 9999999);
+            $entryid = rand(100000000, 999999999);
             $sql = "SELECT count(*) FROM ".$table_name." WHERE ".$tables[0]." = ".$entryid;
             $rowcount = $pdo->query($sql)->fetchColumn(); 
         }while($rowcount > 0);  //Check, if id is already existing
