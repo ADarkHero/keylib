@@ -8,6 +8,7 @@
 		<select class="form-control input-lg" name="type">
 		  <option>Steam</option>
 		  <option>Last.FM</option>
+		  <option>Other</option>
 		  <!-- <option>Other</option> -->
 		</select>
 	</div>
