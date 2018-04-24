@@ -1,32 +1,43 @@
-﻿<!-- JQuery -->
-<script src="js/jquery-3.1.1.min.js"></script>
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="css/bootstrap.css">
+<html>
+    <head>
+            <title>Keylib</title>
+            <meta charset="utf-8" />
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="css/bootstrap-theme.css">
+            <!-- JQuery -->
+            <script src="js/jquery-3.1.1.min.js"></script>
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="js/bootstrap.js"></script>
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="css/bootstrap.css">
 
-<!-- Main Stylesheet -->
-<link rel="stylesheet" href="css/main.css">
+            <!-- Optional theme -->
+            <link rel="stylesheet" href="css/bootstrap-theme.css">
 
-<?php
-	//Tells Bootstrap, which Menulink should be marked as active
-	function isactive($check){
-		$currenturl = basename($_SERVER['REQUEST_URI'], '.php');
-		$url = explode('=', $currenturl);
-		
-		if(isset($url[1]) && $check == $url[1]){
-			return 'class="active"';
-		}
-	}
-?>
+            <!-- Latest compiled and minified JavaScript -->
+            <script src="js/bootstrap.js"></script>
 
-<ul class="nav nav-tabs nav-justified">
-  <li role="presentation" <?php echo isactive("home"); ?>><a href="index.php?s=home">Home</a></li>
-  <li role="presentation" <?php echo isactive("add"); ?>><a href="index.php?s=add">Add</a></li>
-  <li role="presentation" <?php echo isactive("options"); ?>><a href="index.php?s=options">Options</a></li>
-</ul>
+            <!-- Main Stylesheet -->
+            <link rel="stylesheet" href="css/main.css">
+    </head>
+	
+        <body>﻿
+
+
+
+        <?php
+            //Tells Bootstrap, which Menulink should be marked as active
+            function isactive($check){
+                    $currenturl = basename($_SERVER['REQUEST_URI'], '.php');
+                    $url = explode('=', $currenturl);
+
+                    if(isset($url[1]) && $check == $url[1]){
+                            return 'class="active"';
+                    }
+            }
+        ?>
+
+        <ul class="nav nav-tabs nav-justified">
+          <li role="presentation" <?php echo isactive("home"); ?>><a href="index.php?s=home">Home</a></li>
+          <li role="presentation" <?php echo isactive("add"); ?>><a href="index.php?s=add">Add</a></li>
+          <li role="presentation" <?php echo isactive("options"); ?>><a href="index.php?s=options">Options</a></li>
+        </ul>
