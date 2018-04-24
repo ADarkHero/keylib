@@ -49,7 +49,13 @@
         echo '</div>';
         
         echo '<div class="row">';
-            echo '<div class="col-sm-12"><input type="submit" value="Save changes" class="btn btn-primary btn-lg btn-block"></div>';
+            if(isset($_POST[$tables[0]])){
+               echo '<div class="col-sm-12"><input type="submit" value="Changes saved successfully" class="btn btn-success btn-lg btn-block"></div>'; 
+            }
+            else{
+                echo '<div class="col-sm-12"><input type="submit" value="Save changes" class="btn btn-primary btn-lg btn-block"></div>';
+            }
+            
         echo '</div>';
         echo '</form>';
    
