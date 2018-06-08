@@ -22,8 +22,7 @@
 
 <?php
 //Checks if the User actually wants to add something
-	if(isset($_POST["name"]) && $_POST["name"] != ""){
-		include 'php/scr/addtodb.php';
-	}
-
+    if(isset($_POST["name"]) && $_POST["name"] != ""){
+        include 'php/scr/addtodb.php';
+    }
 ?>
